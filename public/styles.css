@@ -1,0 +1,60 @@
+/*Getting rid of margin */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color:lightcyan;
+}
+/*THE NAVBAR STYLE */
+nav{
+    display: flex;
+    padding: 10px;
+    align-items: center ;
+    background-color: lightskyblue;
+    box-shadow: 2px 3px 7.4564px rgba(126,0,0, 0.5);
+}
+nav>img{
+    margin-right:0px;
+    
+}
+.nav-ele{
+    list-style:none;
+    display:flex;
+    margin-right: 12px;
+}
+.nav-head{
+    margin-right: auto;
+}
+.nav-ele > li{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*MAIN STYLE*/
+main{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+}
+
+/*CARDS*/
+
+.card--subset{
+    width: fit-content;
+    text-align: center;
+    margin: 30px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+.card{
+    background-color:dimgrey;
+    margin: 5px;
+    padding: 1px;
+    border-radius: 5px;
+}
