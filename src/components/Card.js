@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Card(){
+export default function Card(props){
     return(
         <div className="card">
             <div className="card--subset">
-                <p><b>Macbook 2024 M3 chip  </b></p>
-                <img src="./images/macbook.png" alt="Sed"  className="cardImg" height="150px" width="130px"/>
-                <p>$ 1,000</p>
+                <p><b>{props.name}</b></p>
+                <img src={props.img} alt="Sed"  className="cardImg" height="150px" width="150px"/>
+                <p>{props.price}</p>
             </div>
         </div>
                 

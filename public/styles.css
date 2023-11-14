@@ -44,17 +44,31 @@ main{
 /*CARDS*/
 
 .card--subset{
-    width: fit-content;
     text-align: center;
-    margin: 30px;
+    margin: 5px;
     background-color: black;
     padding: 10px;
     color: white;
     border-radius: 10px;
+    width: 190px;
+
 }
 .card{
-    background-color:dimgrey;
-    margin: 5px;
-    padding: 1px;
+    width:200px;
+    background-color:dimgrey;   
     border-radius: 5px;
+    margin: 5px;
+    display:inline-flex;
+    box-shadow: 2px 3px 7.4564px rgba(0,0,0, 1);
+
+}
+.LiveBox{
+    background-color: antiquewhite;
+    width:fit-content ;
+    margin: 10px;
+    padding: 2px 20px 20px 20px;
+    border-radius: 10px;
+}
+.LiveBox>h2{
+    text-align: center;
 }
