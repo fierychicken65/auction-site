@@ -55,15 +55,16 @@ main{
     padding: 10px;
     color: white;
     border-radius: 10px;
-    width: 190px;
+    width: fit-content  ;
 
 }
 .card{
-    width:200px;
+    width:fit-content;
     background-color:dimgrey;   
     border-radius: 5px;
     margin: 5px;
     display:inline-flex;
+    flex-direction: column;
     box-shadow: 2px 3px 7.4564px rgba(0,0,0, 1);
 
 }
