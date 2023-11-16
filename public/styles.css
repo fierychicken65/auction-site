@@ -13,7 +13,7 @@ nav{
     padding: 10px;
     align-items: center ;
     background-color: lightskyblue;
-    box-shadow: 2px 3px 7.4564px rgba(126,0,0, 0.5);
+    box-shadow: 2px 3px 7.4564px rgba(0,0,0, 1);
 }
 nav>img{
     margin-right:0px;
@@ -77,4 +77,52 @@ main{
 }
 .LiveBox>h2{
     text-align: center;
+}
+/*LOGIN PAGE*/
+.login>h1{
+    text-align: center;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 605px;
+    background-color:lavenderblush;
+    margin: 5px;
+    box-shadow:2px 3px 7.4564px rgba(0,0,0, 1);
+}
+
+.LoginInput{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 300px;
+    font-weight: bold;
+
+}
+
+.login--subset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    text-align: center;
+    background-color:black;
+    color: thistle;
+    height: fit-content;
+    box-shadow: 2px 3px 7.4564px rgba(0,0,0, 1);
+}
+
+.SubmitButton{
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
 }
