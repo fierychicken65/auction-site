@@ -125,4 +125,8 @@ form {
     margin-top: 20px;
     height: 30px;
     border-radius: 5px;
+    color: thistle;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 15px;
 }

@@ -8,7 +8,7 @@ export default function Login(){
                 <input type="text" id="username" placeholder="Enter your username"   className="LoginInput" required/>
                 <input type="email" id="Email" placeholder="Enter your E-mail ID"  className="LoginInput" required/>
                 <input type="password" id="password" placeholder="Enter your password" className="LoginInput"  required/>
-                <button type="submit" className="SubmitButton">Login</button>
+                <button type="submit" className="SubmitButton">SUBMIT</button>
             </form>
         </form>
     )
