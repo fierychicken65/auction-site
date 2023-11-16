@@ -5,12 +5,15 @@ import Card from "./components/Card";
 import Hero from "./components/Hero";
 import Login from "./components/Login";
 import {BrowserRouter, Route,Routes} from "react-router-dom";
+import PrivateComponent from "./components/PrivateComponent";
+
 export default function App(){
     return(
         <div className="container">
             <BrowserRouter>
             <Navbar />
                 <Routes>
+                <Route element={<PrivateComponent />}>
                 <Route path="/Home" element={
                     <div>
                         <Main />
@@ -37,8 +40,9 @@ export default function App(){
                 } />
                 <Route path="/About" element={<h1 className="About">About</h1>} />
                 <Route path="/Contact" element={<h1 className="Contact">WASSUP FRAND!!</h1>} />
-                <Route path="/Login" element={<Login />} />
+                </Route>
                 
+                <Route path="/Login" element={<Login />} />
                     
                 </Routes>
             </BrowserRouter>
