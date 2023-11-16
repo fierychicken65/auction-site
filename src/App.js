@@ -41,8 +41,7 @@ export default function App(){
                 <Route path="/About" element={<h1 className="About">About</h1>} />
                 <Route path="/Contact" element={<h1 className="Contact">WASSUP FRAND!!</h1>} />
                 </Route>
-                
-                <Route path="/Login" element={<Login />} />
+                <Route path="/login" element={<Login />} />
                     
                 </Routes>
             </BrowserRouter>
