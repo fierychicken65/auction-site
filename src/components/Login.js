@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 
 
@@ -8,6 +8,13 @@ export default function Login(){
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
     const navigate = useNavigate();
+
+    useEffect(()=>{
+        const auth = localStorage.getItem("user");
+        if(auth){
+           navigate("/Home");
+        }
+    })
 
     const collectData = async () =>{
         console.warn(name, email, password);
