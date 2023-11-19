@@ -37,7 +37,7 @@ export default function Login(){
         <form className="login">
             <form className="login--subset">
 
-                <h1>LOGIN</h1>
+                <h1>REGISTER</h1>
                 <input type="text" id="username" placeholder="Enter your username"   className="LoginInput" value={name} onChange={(e)=>setName(e.target.value)} required/>
                 <input type="email" id="Email" placeholder="Enter your E-mail ID"  className="LoginInput" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
                 <input type="password" id="password" autoComplete="on" placeholder="Enter your password" className="LoginInput" value={password} onChange={(e)=>setPassword(e.target.value)} required/>

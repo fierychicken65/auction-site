@@ -37,15 +37,21 @@ export default function Navbar() {
                   Contact Us
                </Link>
             </li>
-            <li>
-               {auth ? (
-                  <Link to="/logout" onClick={logout}>
-                     Logout
+            {
+               auth ? <li><Link to="/Logout" onClick={logout}>Log out</Link></li>:
+               <>
+               <li>
+                  <Link to="/SignIn" >
+                     Login
                   </Link>
-               ) : (
-                  <Link to="/login">Sign up</Link>
-               )}
-            </li>
+               </li>
+               <li>
+                  <Link to="/login">
+                     Register
+                  </Link>
+               </li>
+               </>
+            }        
          </ul>
       </nav>
    );

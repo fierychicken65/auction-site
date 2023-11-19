@@ -4,6 +4,7 @@ import Main from "./components/Main"
 import Card from "./components/Card";
 import Hero from "./components/Hero";
 import Login from "./components/Login";
+import SignIn from "./components/SignIn";
 import {BrowserRouter, Route,Routes} from "react-router-dom";
 import PrivateComponent from "./components/PrivateComponent";
 
@@ -41,8 +42,9 @@ export default function App(){
                 <Route path="/About" element={<h1 className="About">About</h1>} />
                 <Route path="/Contact" element={<h1 className="Contact">WASSUP FRAND!!</h1>} />
                 </Route>
+
+                <Route path="/SignIn" element={<SignIn/>}/>
                 <Route path="/login" element={<Login />} />
-                    
                 </Routes>
             </BrowserRouter>
         </div>
