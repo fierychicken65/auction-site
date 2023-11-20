@@ -22,7 +22,6 @@ nav>img{
 .nav-ele{
     list-style:none;
     display:flex;
-    margin-right: 12px;
 }
 .nav-head{
     margin-right: auto;
@@ -30,6 +29,13 @@ nav>img{
 .nav-ele > li{
     padding: 10px;
     border-radius: 10px;
+    font-size: 20px;
+}
+.nav-ele> li:hover{
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 23px;
+    background-color: tomato;
 }
 /*HERO IMAGE*/
 .heroo{
@@ -130,6 +136,39 @@ form {
     font-weight: bolder;
     margin-bottom: 15px;
 }
+.SubmitButton:hover{
+    background-color:gray;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 110px;
+    height: 35px;
+}
 
+    
 
-/*SIGN IN PAGE*/
+/*2nd Navbar PAGE*/
+.nav-2{
+    box-sizing: border-box;
+    display: flex;
+    margin:10px;
+    background-color: lightgreen;
+    box-shadow: 2px 3px 7.4564px rgba(12,0,0, 1);
+    width: fit-content;
+    border-radius: 20px;
+}
+.nav-2>ul{
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+}
+.nav-2>ul>li{
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 6px;
+    margin-left: 0px;
+    font-weight: bold;
+    color:white;
+    padding: 10px;
+
+}

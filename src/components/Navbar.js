@@ -2,9 +2,9 @@ import React from "react";
 import { Link,useNavigate } from "react-router-dom";
 
 
-
 export default function Navbar() {
    const auth = localStorage.getItem("user");
+   const name = JSON.parse(localStorage.getItem("user"))?.name;
    const navigate = useNavigate();
    const logout = () => {
       localStorage.clear();
@@ -38,7 +38,7 @@ export default function Navbar() {
                </Link>
             </li>
             {
-               auth ? <li><Link to="/Logout" onClick={logout}>Log out</Link></li>:
+               auth ? <li><Link to="/Logout" onClick={logout}>({name})<b>Logout</b></Link></li>:
                <>
                <li>
                   <Link to="/SignIn" >

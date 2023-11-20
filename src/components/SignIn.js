@@ -13,7 +13,7 @@ const SignIn = () => {
     const handlelogin = async () =>{
         console.warn(email, password);
        let result = await fetch("http://localhost:5000/login",{
-       method:"POST",
+       method:"post",
        body:JSON.stringify({
            email,
            password
@@ -24,11 +24,11 @@ const SignIn = () => {
         });
         result = await result.json();
         console.warn(result);
-        if(result){
+        if(result.name){
             localStorage.setItem("user",JSON.stringify(result));
             navigate("/home");
         }else{
-            alert("Wrong email or password");
+            alert("Invalid Credentials")
         }
     }
     return (

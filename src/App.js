@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "./components/Navbar"
 import Main from "./components/Main"
 import Card from "./components/Card";
-import Hero from "./components/Hero";
+import Product from "./components/Product";
 import Login from "./components/Login";
 import SignIn from "./components/SignIn";
+import AddProduct  from "./components/AddProduct";
 import {BrowserRouter, Route,Routes} from "react-router-dom";
 import PrivateComponent from "./components/PrivateComponent";
 
@@ -18,7 +19,7 @@ export default function App(){
                 <Route path="/Home" element={
                     <div>
                         <Main />
-                        <Hero />
+                        <Product />
                         <div className="LiveBox">
                         <h2>LIVE</h2>
                         <Card 
@@ -38,13 +39,23 @@ export default function App(){
                             />
                         </div>
                     </div>
-                } />
+                } /> 
+                
                 <Route path="/About" element={<h1 className="About">About</h1>} />
                 <Route path="/Contact" element={<h1 className="Contact">WASSUP FRAND!!</h1>} />
                 </Route>
 
                 <Route path="/SignIn" element={<SignIn/>}/>
                 <Route path="/login" element={<Login />} />
+                </Routes>
+                <Routes>
+                <Route path="add" element={
+                <div>
+                    <Product/>
+                    <AddProduct />
+                </div>
+                }/>
+                <Route path="/products" element={<h1>Products</h1>} />
                 </Routes>
             </BrowserRouter>
         </div>
