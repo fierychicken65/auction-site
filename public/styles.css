@@ -4,6 +4,8 @@
 }
 
 body{
+    font-family: 'Unbounded', sans-serif;
+
     margin: 0;
     background-color:lightcyan;
 }
@@ -61,7 +63,8 @@ main{
     padding: 10px;
     color: white;
     border-radius: 10px;
-    width: fit-content  ;
+    width: 200px  ;
+    height:300px;
 
 }
 .card{
@@ -76,13 +79,29 @@ main{
 }
 .LiveBox{
     background-color: antiquewhite;
-    width:fit-content ;
-    margin: 10px;
+    width:100% ;
+    margin-right: auto;
     padding: 2px 20px 20px 20px;
     border-radius: 10px;
+    margin: auto;
 }
 .LiveBox>h2{
     text-align: center;
+}
+.main_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background-color:black;
+    color: thistle;
+    box-shadow: 2px 3px 7.4564px rgba(0,0,0, 1);
+    width: fit-content;
+    margin-top: 10px;
 }
 /*LOGIN PAGE*/
 .login>h1{
@@ -153,9 +172,12 @@ form {
     display: flex;
     margin:10px;
     background-color: lightgreen;
-    box-shadow: 2px 3px 7.4564px rgba(12,0,0, 1);
+    box-shadow: 2px 3px 7.4564px rgba(0,150,100, 1);
     width: fit-content;
     border-radius: 20px;
+    color: aliceblue;
+    margin:auto;
+    margin-top: 1pc;
 }
 .nav-2>ul{
     list-style: none;
@@ -163,12 +185,149 @@ form {
     padding-right: 20px;
 }
 .nav-2>ul>li{
-    background-color: black;
+    color:wheat;
+    background-color:azure;
     border-radius: 10px;
     margin-right: 6px;
     margin-left: 0px;
     font-weight: bold;
-    color:white;
     padding: 10px;
 
+
 }
+.nav-2>ul>li:hover{
+    transform: translateY(-5px);
+    background-color: rgb(172, 212, 212);
+    box-shadow: 2px 3px 7.4564px rgba(0,150,100, 1);
+}
+/*Product List*/
+.PL_header{
+    text-align: center;
+    font-family: 'Unbounded', sans-serif;
+    color: black;
+    margin-top: 20px;
+}
+.Product-list{
+    margin-top: 50px;
+}
+.Product-list>ul{
+    list-style: none;
+    border: azure dotted;
+    text-align: center;
+    margin: 0px;
+}
+.Product-list>ul>li{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    margin-top: 0px;
+    height: 70px;
+    overflow:auto;
+    background-color: black;
+    color:blanchedalmond
+}
+
+/*ADD PRODUCT PAGE*/
+.AddProd_div{
+    background-color:  rgb(223, 203, 164);
+    box-shadow: 2px 3px 7.4564px rgb(14, 49, 92);
+    max-width:  400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #130202;
+    border-radius: 8px;
+    text-align: center;
+}
+/* Style for the heading */
+.AP_header{
+    color: #333;
+    
+    
+    font-family: 'Unbounded', sans-serif;
+    
+    
+}
+  
+  /* Style for input fields */
+  .inputAP {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    font-weight: bolder;
+  }
+
+  .inputAP:focus{
+    outline: none;
+    border: 3px solid rgb(37, 153, 37);
+    transform: translateY(-2px);
+  }
+  
+    /* Style for labels */  
+  .invalid_entry {
+    color: red;
+    display: block;
+    margin-top: 5px;
+  }
+  
+ 
+  .AddProductButton {
+    background-color:rgb(37, 153, 37);
+    color: whitesmoke;
+    padding: 10px 15px;
+    border:5px solid rgb(37, 153, 37);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Unbounded', sans-serif;
+  
+    transition:all 0.3s;
+  }
+  
+  /* Hover effect for the button */
+  .AddProductButton:hover {
+    background-color: lightgreen;
+    transform:translateY(-5px);
+    
+  }
+  
+a {
+    color:black;
+}
+/*ANIMATION*/
+
+
+.animationinput1{
+    animation: delay 0.5s;;
+    animation-fill-mode: both
+}
+
+
+
+
+
+
+@keyframes slideinleft {
+    from{
+        transform: translateY(1100px);
+
+    }
+    to{
+        transform: translateX(0);
+
+    }
+
+    
+}
+
+.slideinleft{
+    animation-name:slideinleft;
+    animation-timing-function:ease-in;
+}
+

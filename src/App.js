@@ -6,6 +6,7 @@ import Product from "./components/Product";
 import Login from "./components/Login";
 import SignIn from "./components/SignIn";
 import AddProduct  from "./components/AddProduct";
+import ProductList from "./components/ProductList";
 import {BrowserRouter, Route,Routes} from "react-router-dom";
 import PrivateComponent from "./components/PrivateComponent";
 
@@ -18,10 +19,10 @@ export default function App(){
                 <Route element={<PrivateComponent />}>
                 <Route path="/Home" element={
                     <div>
-                        <Main />
                         <Product />
+                        <Main />
                         <div className="LiveBox">
-                        <h2>LIVE</h2>
+                        <h2>🔴<b>LIVE</b> </h2>
                         <Card 
                             name="DELL G15"
                             img = "./images/dell_g15.png"
@@ -49,13 +50,18 @@ export default function App(){
                 <Route path="/login" element={<Login />} />
                 </Routes>
                 <Routes>
-                <Route path="add" element={
+                <Route path="/add" element={
                 <div>
                     <Product/>
                     <AddProduct />
                 </div>
                 }/>
-                <Route path="/products" element={<h1>Products</h1>} />
+                <Route path="/products" element={
+                    <div>
+                        <Product />
+                        <ProductList />
+                    </div>
+                } />
                 </Routes>
             </BrowserRouter>
         </div>

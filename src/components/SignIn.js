@@ -33,7 +33,7 @@ const SignIn = () => {
     }
     return (
         <form className="login">
-            <form className="login--subset">
+            <form className="login--subset animationinput1 slideinleft">
             <h1>SIGN IN</h1>
             <input type="email" id="Email" placeholder="Enter your E-mail ID"  className="LoginInput" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
             <input type="password" id="password" autoComplete="on" placeholder="Enter your password" className="LoginInput" value={password} onChange={(e)=>setPassword(e.target.value)} required/>

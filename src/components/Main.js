@@ -12,7 +12,7 @@ export default function Main(){
    }
 
    return(
-         <main>
+         <main className="main_box">
             <h2>Good {timeofday} </h2>
             <h2>Welcome to The Auction Website</h2>
          </main>

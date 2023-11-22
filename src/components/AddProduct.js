@@ -24,17 +24,17 @@ const AddProduct =()=>{
         console.warn(result);
     }
     return(
-        <div>
-            <h1>ADD PRODUCT</h1>
-            <input type="text" className="inputAP" placeholder="Enter product name" value={name} onChange={(e)=>setName(e.target.value)}/>
-            {error && !name && <span>Enter valid name</span>}
-            <input type="text" className="inputAP" placeholder="Enter product price" value={price} onChange={(e)=>setPrice(e.target.value)}/>
-            {error && !price && <span>Enter valid price</span>}
-            <input type="text" className="inputAP" placeholder="Enter product category" value={category} onChange={(e)=>setCategory(e.target.value)}/>
-            {error && !category && <span>Enter valid category</span>}
-            <input type="text" className="inputAP" placeholder="Enter product brand" value={company} onChange={(e)=>setCompany(e.target.value)}/>
-            {error && !company && <span>Enter valid company</span>}
-            <button onClick={addProduct}>Add Product</button>
+        <div className="AddProd_div animationinput1 slideinleft">
+            <h1 className="AP_header animationinput2 slideinleft">ADD PRODUCT</h1>
+            <input type="text" className="inputAP animationinput2 slideinleft" placeholder="Enter product name" value={name} onChange={(e)=>setName(e.target.value)}/>
+            {error && !name && <span className="invalid_entry">Enter valid name</span>}
+            <input type="text" className="inputAP animationinput2 slideinleft" placeholder="Enter product price" value={price} onChange={(e)=>setPrice(e.target.value)}/>
+            {error && !price && <span className="invalid_entry">Enter valid price</span>}
+            <input type="text" className="inputAP animationinput2 slideinleft" placeholder="Enter product category" value={category} onChange={(e)=>setCategory(e.target.value)}/>
+            {error && !category && <span className="invalid_entry">Enter valid category</span>}
+            <input type="text" className="inputAP animationinput2 slideinleft" placeholder="Enter product brand" value={company} onChange={(e)=>setCompany(e.target.value)}/>
+            {error && !company && <span className="invalid_entry">Enter valid company</span>}
+            <button className="AddProductButton animationinput2 slideinleft" onClick={addProduct}>Add Product</button>
         </div>
     )
 }

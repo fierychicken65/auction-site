@@ -35,7 +35,7 @@ export default function Login(){
 
     return(
         <form className="login">
-            <form className="login--subset">
+            <form className="login--subset animationinput1 slideinleft">
 
                 <h1>REGISTER</h1>
                 <input type="text" id="username" placeholder="Enter your username"   className="LoginInput" value={name} onChange={(e)=>setName(e.target.value)} required/>
